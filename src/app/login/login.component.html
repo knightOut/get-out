@@ -1,0 +1,25 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" class="form-horizontal">
+  <div class="form-group">
+<div class="col-sm-8 col-xs-8 col-md-4 col-md-offset-4 col-xs-offset-2">
+  <label for="inputEmail3" class="control-label">Email:</label>
+  <input  type="email" class="form-control" id="inputEmail3" placeholder="Email" required [ngModel]="user.email" name="email">
+</div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-8 col-xs-8 col-md-4 col-md-offset-4 col-xs-offset-2">
+      <label for="inputPassword3" class="control-label">Password:</label>
+      <input  type="password" class="form-control" id="inputPassword3" placeholder="Password" required [ngModel]="user.password" name="password">
+    </div>
+  </div>
+
+  <div class="text-center form-group">
+      <button [disabled]="!f.valid" type="submit" class="col-md-2 col-md-offset-5 col-xs-offset-3 col-xs-6  btn btn-default">Sign in</button>
+  </div>
+</form>
+<div class ="text-center">
+  <hr class="hr-with-text">
+  <h3 class="in-text">OR</h3>
+  <h3>SIGN IN WITH...</h3>
+  <facebook-login></facebook-login>
+</div>
+

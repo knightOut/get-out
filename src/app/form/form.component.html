@@ -1,0 +1,137 @@
+
+<div class="jumbotron"[ngSwitch]='status'>
+   <div *ngSwitchCase="'loading'" class="loading">
+        <img src="../../Content/Spinner2.gif" class="spinner" />
+  </div>
+  <div *ngSwitchCase="'active'" class="main-form">
+    <h3 style="margin-top: 0px;">Search places nearby:)</h3>
+    <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)" class="sub-form">
+
+      <label class="title">Budget:</label>
+      <div class="radio-container">
+     <!-- <div class="form-group">
+        <div class="alert alert-danger" *ngIf="!complexForm.controls['budget'].valid && complexForm.controls['budget'].touched">You must select a budget.</div>
+      </div>-->
+      <div class="radio">
+        <label>
+          <span pop-over="hi">
+          <input type="radio" name="budget" value="Low" [formControl]="complexForm.controls['budget']">
+          <img src="../../Content/Money.png" class="imgSelect img-responsive">
+          </span>
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="budget" value="Medium" [formControl]="complexForm.controls['budget']">
+          <img src="../../Content/Money.png" class="imgSelect img-responsive">
+        </label>
+      </div>
+       <div class="radio">
+        <label>
+          <input type="radio" name="budget" value="High" [formControl]="complexForm.controls['budget']">
+          <img src="../../Content/Money.png" class="imgSelect img-responsive">
+        </label>
+      </div>
+    </div>
+
+      <label class="title">transportation:</label>
+
+      <div class="radio-container">
+       <!-- <div class="form-group">
+        <div class="alert alert-danger" *ngIf="!complexForm.controls['transport'].valid && complexForm.controls['transport'].touched">You must select a transportation.</div>
+      </div>-->
+      <div class="radio">
+        <label>
+          <input type="radio" name="transport" value="Walk" [formControl]="complexForm.controls['transport']">
+          <img src="../../Content/Walk.png" class="imgSelect img-responsive">
+        </label>
+      </div>
+      <div class="radio">
+         <label>
+          <input type="radio" name="transport" value="Bus" [formControl]="complexForm.controls['transport']">
+          <img src="../../Content/Bus.png" class="imgSelect img-responsive">
+        </label>
+      </div>
+       <div class="radio">
+        <label>
+          <input type="radio" name="transport" value="Car" [formControl]="complexForm.controls['transport']">
+          <img src="../../Content/Car.png" class="imgSelect img-responsive">
+
+        </label>
+      </div>
+       <div class="radio">
+        <label>
+          <input type="radio" name="transport" value="Bicycle" [formControl]="complexForm.controls['transport']">
+          <img src="../../Content/Bicycle.png" class="imgSelect img-responsive">
+        </label>
+      </div>
+      </div>
+
+
+
+      <label  class="title">group:</label>
+
+      <div class="radio-container">
+        <!--<div class="form-group">
+        <div class="alert alert-danger" *ngIf="!complexForm.controls['group'].valid && complexForm.controls['group'].touched">You must select a group.</div>
+      </div>-->
+      <div class="radio">
+        <label>
+          <input type="radio" name="group" value="Couple" [formControl]="complexForm.controls['group']">
+          <img src="../../Content/Couple.png" class="imgSelect img-responsive">
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="group" value="Family" [formControl]="complexForm.controls['group']">
+          <img src="../../Content/Family.png" class="imgSelect img-responsive">
+        </label>
+      </div>
+       <div class="radio">
+        <label>
+          <input type="radio" name="group" value="Friends" [formControl]="complexForm.controls['group']">
+          <img src="../../Content/Friends.png" class="imgSelect">
+        </label>
+      </div>
+       <div class="radio">
+        <label>
+          <input type="radio" name="group" value="Kids" [formControl]="complexForm.controls['group']">
+          <img src="../../Content/Kids.png" class="imgSelect img-responsive">
+        </label>
+      </div>
+
+      </div>
+
+      <label class="title">favorite places:</label>
+      <div class="radio-container">
+        <!--<div class="form-group">
+      </div>-->
+      <label class="checkbox-inline">
+        <input type="checkbox" value="restaurent" name="restaurent" [formControl]="complexForm.controls['restaurent']">
+          <img src="../../Content/Restaurent.png" class="imgSelect img-responsive">
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" value="bar" name="bar" [formControl]="complexForm.controls['bar']">
+          <img src="../../Content/Bar.png" class="imgSelect img-responsive">
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" value="caffe" name="caffe" [formControl]="complexForm.controls['caffe']">
+          <img src="../../Content/Caffe.png" class="imgSelect img-responsive">
+       </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" value="concert" name="concert" [formControl]="complexForm.controls['concert']">
+          <img src="../../Content/Concert.png" class="imgSelect img-resposive">
+       </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" value="movie" name="movie" [formControl]="complexForm.controls['movie']">
+          <img src="../../Content/Movie.png" class="imgSelect img-resposive">
+       </label>
+    </div>
+      <div class="form-group submitbtm center-block" style="margin-top: 20px !important;">
+        <button type="submit" class="btn btn-primary" [disabled]="!complexForm.valid" style="padding-left: 0px;">
+        <img src="../../Content/Search-Shield.png" class="btnImg"/> Search 
+        </button>
+      </div>
+    </form>
+</div>
+</div>

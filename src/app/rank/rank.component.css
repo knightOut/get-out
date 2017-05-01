@@ -1,0 +1,25 @@
+.star{
+    height: 15%;
+    width: 15%;
+}
+/*
+.text-review{
+    height: 40%;
+    width: 75%;
+}*/
+.container{
+    display: flex !important;
+    flex-direction: column;
+}
+.head{
+    flex: 0 0 10%;
+}
+.star-rank{
+    flex: 0 0 20%;
+}
+.text-rank{
+    flex: 0 0 30%;
+}
+.btnReview{
+    flex: 0 0 40%;    
+}

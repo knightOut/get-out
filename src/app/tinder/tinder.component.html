@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4">
+      <!-- <div class ="thumbnail"
+         *ngFor="let place of nearbyPlaces; let idx=index"
+         (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)"
+         [class.visible]="place.visible" [class.hidden]="!place.visible">
+       -->
+
+      <div class ="thumbnail"
+           (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)">
+
+        <img [src]="currentPlace.image" class="" [alt]="currentPlace.name">
+
+        <div lass="caption">
+          <p >{{currentPlace.name}}</p>
+          <p >{{currentPlace.title}}</p>
+          <p >{{currentPlace.distance}}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+        <ul class="pager">
+          <li>
+            <a  (click)="onDisLike()">
+              <img src="../../Content/Like.png" class="img-responsive"/>
+            </a>
+          </li>
+          <li>
+            <a  (click)="onLike()">
+              <img src="../../Content/DisLike.png" class="img-responsive"/>
+            </a>
+          </li>
+        </ul>
+
+    </div>
+  </div>
