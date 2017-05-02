@@ -58,8 +58,8 @@ h3{
     display: flex !important;
     flex: 1 0 0 !important;
     /*margin-right: 20px;
-    margin-left:20px;
-    margin-bottom: 20px;*/
+    margin-left:20px;*/
+    margin-bottom: 0px;
 }
 .main-form{
 
