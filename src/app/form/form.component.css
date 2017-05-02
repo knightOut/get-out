@@ -57,15 +57,15 @@ h3{
 .jumbotron{
     display: flex !important;
     flex: 1 0 0 !important;
-    margin-right: 20px;
+    /*margin-right: 20px;
     margin-left:20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;*/
 }
 .main-form{
 
     flex: 1 0 0;
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 }
 .sub-form{
     flex: 0 0 90%;
@@ -84,4 +84,8 @@ flex-direction: column;
 }
 .radio label{
     padding-left: 0px;
+}
+.btnImg
+{
+  height: 40px;
 }
