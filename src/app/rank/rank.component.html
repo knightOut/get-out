@@ -1,20 +1,27 @@
-<div class="container1">
-    <div class="head">
-        <h2>Rank - {{place.name}}</h2>
+<div [ngSwitch]='status' class="switch">
+    <div *ngSwitchCase="'loading'" class="loading">
+        <img src="assets/Spinner2.gif" class="spinner" />
     </div>
-    <div class="star-rank">
-        <img src="assets/star.png" class="star">
-        <img src="assets/star.png" class="star">
-        <img src="assets/star.png" class="star">
-        <img src="assets/star.png" class="star">
-        <img src="assets/star.png" class="star">
-    </div>
-    <div class="text-rank">
-        <textarea class="text-review">
-            my review...
-        </textarea>
-    </div>
-    <div class="btnReview">
-        <button (click)="send()">send review!</button>
+    <div  *ngSwitchCase="'active'" class="container1" >
+        <div class="head">
+            <h3>{{place.name}}</h3>
+        </div>
+        <div class="star-rank">
+            <img [src]="star[0]" class="star" (click)="rank(0)">
+            <img [src]="star[1]" class="star" (click)="rank(1)">
+            <img [src]="star[2]" class="star" (click)="rank(2)">
+            <img [src]="star[3]" class="star" (click)="rank(3)">
+            <img [src]="star[4]" class="star" (click)="rank(4)">
+        </div>
+        <div class="text-rank">
+            <textarea class="text-review">
+                my review...
+            </textarea>
+        </div>
+        <div class="btnReview form-group center-block">
+            <button  class="btn btn-primary"  style="padding-left: 0px;" (click)="send()">
+            <img src="assets/Search-Shield.png" class="btnImg"/> send
+            </button>
+        </div>
     </div>
 </div>

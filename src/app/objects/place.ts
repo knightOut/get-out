@@ -4,7 +4,7 @@ export class Place {
   public image    :string;
   public distance :number;
   public name     :string;
-  public title    :string;
+  public details    :string;
   public visible  :boolean
   public location :Location
 }

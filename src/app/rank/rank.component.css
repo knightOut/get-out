@@ -1,25 +1,65 @@
 .star{
-    height: 15%;
-    width: 15%;
+    width: 50px !important;
+    height: 50px !important;
+    vertical-align: middle;
 }
-/*
-.text-review{
-    height: 40%;
-    width: 75%;
-}*/
-.container{
+.container1{
     display: flex !important;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.switch{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 .head{
     flex: 0 0 10%;
 }
 .star-rank{
     flex: 0 0 20%;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 .text-rank{
     flex: 0 0 30%;
+    display: flex;
+    margin-bottom: 15px;
+    align-self: center;
+    justify-content: center;
 }
 .btnReview{
-    flex: 0 0 40%;    
+    flex: 0 0 15%;  
+    align-items: center;
+    justify-content: center;  
+}
+
+.text-review{
+    flex: 1 0 0;
+    width: 100%;
+}
+.btn{
+    padding: 0px;
+    width: 100px;
+    height: 50px;
+}
+.btnImg{
+    width: 40px;
+    height: 40px;
+}
+textarea{ 
+    border-radius: 6px;
+    border-width: 5px;
+}
+h3{
+    margin: 0px !important;
+}
+.loading{
+    display: flex !important;
+    flex: 1 0 0;
+    justify-content: center;
 }

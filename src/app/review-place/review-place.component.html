@@ -1,15 +1,23 @@
 <div class="container1">
-<div class="details">
-  <h2> {{place.name}}</h2>
-  <span>{{place.title}}</span>
-  <img src="{{place.imag}}"/>
-  <button (click)="rankPlace()"> rank the place!</button>
-</div>
-<div class="map-view">
-  <sebm-google-map class="sebm-google-map" [latitude]="place.location.lat" [longitude]="place.location.lng">
-    <sebm-google-map-marker [latitude]="place.location.lat" [longitude]="place.location.lng" 
-    [label]="place.name" [title]="place.title" [iconUrl]="place.imag">
-    </sebm-google-map-marker>
-  </sebm-google-map>
-</div>
+  <div class="head">
+    <h3> {{place.name}}</h3>
+    <img [src]="place.image" class="headImg"/>
+  </div>
+  <div class="details">
+    <div>{{place.details}}</div>
+  </div>
+
+  <div class="map-view">
+    <sebm-google-map class="sebm-google-map" [latitude]="place.location.lat" [longitude]="place.location.lng">
+      <sebm-google-map-marker class="marker" [latitude]="place.location.lat" [longitude]="place.location.lng"
+                                           [label]="place.name" [title]="place.details">
+      </sebm-google-map-marker>
+    </sebm-google-map>
+  </div>
+
+  <div class="btnContainer form-group center-block">
+    <button  class="btn btn-primary"  style="padding-left: 0px;" (click)="rankPlace()">
+        <img src="assets/Search-Shield.png" class="btnImg"/> rank
+      </button>
+  </div>
 </div>
