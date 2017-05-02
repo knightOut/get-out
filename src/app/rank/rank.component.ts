@@ -11,8 +11,8 @@ import {RankService} from './rank.service';
 export class RankComponent implements OnInit {
   place: Place;
   star: string[];
-  regular_star: string = "assets/Star.png";
-  yellow_star: string = "assets/Star_yellow.png";
+  regular_star: string = "assets/star.png";
+  yellow_star: string = "assets/star_yellow.png";
   status = 'active';
 
   constructor(private resultsService: ResultsService, private rankService: RankService) { }
