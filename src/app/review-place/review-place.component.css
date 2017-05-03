@@ -12,6 +12,8 @@
     flex: 0 0 30%;
     margin-right: 20px;
     margin-left: 20px;
+    direction: rtl;
+    padding: 10px;
 }
 .map-view{
     flex: 0 0 40%;
@@ -39,7 +41,7 @@
     border: 2px solid #ddd;
     border-radius: 4px;
     width: 40px;
-    height: 40;
+    height: 40px;
     margin: 5px;
 }
 .btnContainer{
@@ -48,6 +50,8 @@
     justify-content: center;  
 }
 .btn{
+    background-color: #2cd5c4 !important;
+    border: none !important;
     padding: 0px;
     width: 100px;
     height: 50px;

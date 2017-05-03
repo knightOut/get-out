@@ -5,13 +5,13 @@
   border-color:lightgray;
 }
 .imgSelect:hover{
-  border-color:dodgerblue;
-  cursor: pointer;
+    border-color:#2cd5c4;
+    cursor: pointer;
 }
-input[type=radio]:checked+img{
-  border-color:dodgerblue;
+.input[type=radio]:checked + img {
+    border-color:#2cd5c4;
+    cursor: pointer;
 }
-
 input[type=radio]{
   visibility: hidden;
   margin: 0px !important;
@@ -42,7 +42,7 @@ input[type=checkbox]{
   flex: 0 0 16%;
 }
 .input[type=chckbox]:checked + img {
-  border-color:dodgerblue;
+    border-color:#2cd5c4;
 }
 .loading{
   display: flex !important;
@@ -78,6 +78,13 @@ h3{
 }
 .submitbtm{
   flex: 0 0 15% !important;
+}
+.btn{
+    padding: 0px;
+    width: 100px;
+    height: 50px;
+    background-color: #2cd5c4 !important;
+    border: none !important;
 }
 .title{
   flex: 1 0 0;

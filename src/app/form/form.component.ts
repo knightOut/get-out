@@ -3,12 +3,15 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import {SearchService} from './form.service';
 import {Place } from '../objects/place';
+import {routerTransition} from "../router.animations";
 
 
 @Component({
   selector: 'form-validation',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.css'],
+  animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class FormValidationComponent {
   complexForm : FormGroup;
@@ -36,7 +39,7 @@ export class FormValidationComponent {
   submitForm(value: any){
     this.status = 'loading';
     this.searchService.getRecommendation(this.complexForm.value, 'loc');
-    this.searchResult = this.searchService.getResults(); 
+    this.searchResult = this.searchService.getResults();
     this.router.navigate(['/results']);
   }
 }

@@ -199,3 +199,11 @@ sc-card {
 .hidden {
   display: none;
 }
+.like{
+    cursor: pointer;
+    border-radius: 40%;
+    border-width: 3px;
+}
+.like:hover{
+  border-color: #2cd5c4 !important;
+}

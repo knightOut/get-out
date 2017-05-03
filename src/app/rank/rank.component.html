@@ -5,6 +5,7 @@
     <div  *ngSwitchCase="'active'" class="container1" >
         <div class="head">
             <h3>{{place.name}}</h3>
+            <img [src]="place.image" class="headImg"/>    
         </div>
         <div class="star-rank">
             <img [src]="star[0]" class="star" (click)="rank(0)">

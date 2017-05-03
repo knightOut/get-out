@@ -18,15 +18,20 @@
 }
 .head{
     flex: 0 0 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .star-rank{
-    flex: 0 0 20%;
+    flex: 0 0 10%;
     align-items: center;
     text-align: center;
     cursor: pointer;
 }
 .text-rank{
     flex: 0 0 30%;
+    width: 100%;
     display: flex;
     margin-bottom: 15px;
     align-self: center;
@@ -43,6 +48,8 @@
     width: 100%;
 }
 .btn{
+    background-color: #2cd5c4 !important;
+    border: none !important;
     padding: 0px;
     width: 100px;
     height: 50px;
@@ -62,4 +69,14 @@ h3{
     display: flex !important;
     flex: 1 0 0;
     justify-content: center;
+}
+.headImg{
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 40px;
+    height: 40;
+    margin: 5px;
+}
+textarea:hover{ 
+    border-color: #2cd5c4;
 }
