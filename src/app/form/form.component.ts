@@ -36,10 +36,13 @@ export class FormValidationComponent {
     );
   }
 
-  submitForm(value: any){
+  submitForm(value: any) {
     this.status = 'loading';
     this.searchService.getRecommendation(this.complexForm.value, 'loc');
     this.searchResult = this.searchService.getResults();
-    this.router.navigate(['/results']);
+    window.setTimeout(() => {
+      this.router.navigate(['/results']);
+    }, 3000);
+
   }
 }

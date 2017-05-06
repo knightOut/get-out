@@ -4,7 +4,7 @@
     <img src="assets/Spinner2.gif" class="spinner" />
   </div>
   <div *ngSwitchCase="'active'" class="main-form">
-    <h3 style="margin-top: 0px;">Search places nearby:)</h3>
+    <h3 style="margin-top: 0px;">Search places nearby</h3>
     <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)" class="sub-form">
 
       <label class="title">Budget:</label>
@@ -23,13 +23,13 @@
         <div class="radio">
           <label>
             <input type="radio" name="budget" value="Medium" [formControl]="complexForm.controls['budget']">
-            <img src="assets/Money.png" class="imgSelect img-responsive">
+            <img src="assets/Money2.png" class="imgSelect img-responsive">
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="budget" value="High" [formControl]="complexForm.controls['budget']">
-            <img src="assets/Money.png" class="imgSelect img-responsive">
+            <img src="assets/Money3.png" class="imgSelect img-responsive">
           </label>
         </div>
       </div>

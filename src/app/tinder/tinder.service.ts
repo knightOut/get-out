@@ -8,8 +8,8 @@ export class TinderService {
         name: 'המסעדה',
         image: 'https://www.imageupload.co.uk/images/2017/04/23/resturnat.png',
         visible: true,
-       details: 'title',
-        distance: 0.4,
+       details: 'מסעדת המסעדה',
+        distance: 1.5,
         location: {lat: 32.0662,
                   lng: 34.7778}
       },
@@ -18,8 +18,8 @@ export class TinderService {
         name: 'סינמה סיטי',
         image: 'https://www.imageupload.co.uk/images/2017/04/23/cinema-city.png',
         visible: false,
-        details: 'מסעדת בשרים',
-        distance: 0.4,
+        details: 'עיר הסרטים של ישראל',
+        distance: 1,
           location: {lat: 34.0662,
                   lng: 37.7778}
       },
@@ -28,8 +28,8 @@ export class TinderService {
         name: 'retro bar',
         image: 'https://www.imageupload.co.uk/images/2017/04/23/Retro.jpg',
         visible: false,
-        details: 'title',
-        distance: 0.4,
+        details: 'פנקייק בר',
+        distance: 2,
           location: {lat: 30.0662,
                   lng: 34.7778}
       },
@@ -37,7 +37,7 @@ export class TinderService {
         name: 'יודלה',
         image: 'https://www.imageupload.co.uk/images/2017/04/23/yudla.jpg',
         visible: false,
-        details: 'title',
+        details: 'בר מסלולים',
         distance: 0.4,
           location: {lat: 31.0662,
                   lng: 31.7778}
@@ -47,8 +47,8 @@ export class TinderService {
         name: 'puppets',
         image: 'https://www.imageupload.co.uk/images/2017/04/23/puppets.png',
         visible: false,
-        details: 'title',
-        distance: 0.4,
+        details: 'דאנס בר',
+        distance: 3,
         location: {lat: 39.0662,
                   lng: 34.7778}
 
